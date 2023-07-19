@@ -1,14 +1,14 @@
 public class Main {
     public static boolean checkLeapYear(int year) {
-        boolean IsleapYear;
+        boolean isleapYear;
         if (year % 400 == 0) {
-            IsleapYear = true;
-            return IsleapYear;
+            isleapYear = true;
+            return isleapYear;
         } else if (year % 4 == 0 && year % 100 != 0) {
-            IsleapYear = true;
-            return IsleapYear;
-        } else IsleapYear = false;
-        return IsleapYear;
+            isleapYear = true;
+            return isleapYear;
+        } else isleapYear = false;
+        return isleapYear;
     }
 
     public static void printAppSuggestion(byte clientOS, int clientDeviceYear) {
@@ -50,9 +50,11 @@ public class Main {
 
         int yearForCheck = 2023;
 
-        if (checkLeapYear(yearForCheck))
+        if (checkLeapYear(yearForCheck)) {
             System.out.println(yearForCheck + " год — високосный год");
-        else System.out.println(yearForCheck + " год — невисокосный год");
+        } else {
+            System.out.println(yearForCheck + " год — невисокосный год");
+        }
     }
 
     public static void task2() {
