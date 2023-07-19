@@ -71,8 +71,10 @@ public class Main {
 
         int deliveryDistance = 25;
 
-        if (deliveryDays(deliveryDistance) == -1)
+        if (deliveryDays(deliveryDistance) == -1) {
             System.out.println("Доставки нет");
-        else System.out.println("Cрок доставки " + deliveryDays(deliveryDistance) + " день/дня/дней");
+        } else {
+            System.out.println("Cрок доставки " + deliveryDays(deliveryDistance) + " день/дня/дней");
+        }
     }
 }
